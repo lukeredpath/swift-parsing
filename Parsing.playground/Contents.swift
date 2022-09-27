@@ -1,5 +1,6 @@
 import Parsing
 
+// This compiles fine
 func compactMapStrings1(_ strings: [String]) -> [String] {
     strings.compactMap {
         if $0 == "a" { return nil }
@@ -21,6 +22,7 @@ func compactMapStrings2(_ strings: [String]) -> [String] {
     }
 }
 
+// This compiles fine
 func compactMapStrings3(_ strings: [String]) -> [String] {
     strings.compactMap { value -> String? in
         if value == "a" { return nil }
