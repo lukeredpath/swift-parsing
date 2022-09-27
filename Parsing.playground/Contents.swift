@@ -1,7 +1,5 @@
 import Parsing
 
-var strings: [String] = ["a", "b", "c"]
-
 func compactMapStrings1(_ strings: [String]) -> [String] {
     strings.compactMap {
         if $0 == "a" { return nil }
